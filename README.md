@@ -88,7 +88,37 @@ python -m venv .venv
 .\.venv\Scripts\activate
 pip install -r requirements.txt
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-Add your Gemini 3 API key in the .env file.
-Refer to .env.example for required environment variables.
 
-## Frontend Setup
+```
+Add your Gemini 3 API key in the .env file.
+
+## Frontend 
+```bash
+cd Public-Safety-Monitoring/frontend
+npm install
+npm run dev
+```
+## Folder Overview
+
+Public-Safety-Monitoring/backend/
+FastAPI backend, video analyzers, Gemini 3 integration, alert logic, and storage
+
+Public-Safety-Monitoring/frontend/
+React dashboards for users and police authorities
+
+Public-Safety-Monitoring/Crowd_Anomaly_Detection/
+Pretrained models and scripts for crowd analysis
+
+## Environment Variables
+
+Required configuration files:
+
+backend/.env.example
+frontend/.env
+
+These include Gemini 3 API credentials and service configuration values.
+
+## Contributing
+
+Pull requests are welcome.
+For major changes, please open an issue to discuss your proposal.
