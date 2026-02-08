@@ -88,3 +88,7 @@ python -m venv .venv
 .\.venv\Scripts\activate
 pip install -r requirements.txt
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+Add your Gemini 3 API key in the .env file.
+Refer to .env.example for required environment variables.
+
+## Frontend Setup
